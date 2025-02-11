@@ -23,6 +23,7 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
+    "lenses": "^0.1.0",
     "study-lenses": "^0.0.179"
   }
 }
