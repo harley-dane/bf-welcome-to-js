@@ -17,6 +17,8 @@ console.log('--- in execution phase ---');
   the fix(es):
 */
 
-console.log(tomatoes);
+
 
 let tomatoes = 'fresh';
+
+console.log(tomatoes);

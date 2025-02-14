@@ -5,23 +5,25 @@ import {
   displayString,
 } from '../../../../../../../lib/dom-io/index.js';
 
-/*
-  environment:
 
-  name:
-  message:
+  /*
+  const environment = {
 
-  location:
+  name: "Ana",
+  message: "Make friend",
 
-  life cycle:
+  location: " Antwerp",
 
-  the mistake:
+  lifeCycle: 90,
 
-  the fix(es):
-*/
+  theMistake: "Not saving money",
+
+  theFix: "Start to save money"
+  }
+  */
+
 
 whenFormDataChanges('user-data', () => {
-  console.log('\n--- form data changed ---');
 
   // --- read user input ---
 
@@ -29,9 +31,15 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated + text + '\n' + text;
+  let repeated = text + '\n' + text;
 
   // --- display the repeated text ---
 
-  displayString('doubled-input', repeated);
+
+ displayString(displayString, readString, repeated  )
 });
+
+
+
+
+

@@ -18,13 +18,14 @@ console.log('--- in execution phase ---');
 */
 
 const userName = 'chiobin';
-console.log('userName:', typeof userName, userName);
+
 
 if (userName.length > 3) {
-  isValidUserName = true;
+  
+  console.log('userName:', typeof userName, userName);
 }
 
-let isValidUserName;
+let isValidUserName = true
 
 if (userName.length <= 3) {
   isValidUserName = false;

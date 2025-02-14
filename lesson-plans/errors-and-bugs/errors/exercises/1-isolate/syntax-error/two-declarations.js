@@ -19,4 +19,6 @@ console.log('--- in execution phase ---');
 
 let tree = 'oak';
 
-let tree = 'birch';
+let tre = 'birch';
+
+console.log(tree, tre)

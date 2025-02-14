@@ -5,7 +5,6 @@ import {
 } from '../../../../../../lib/dom-io/index.js';
 
 whenFormDataChanges('input', () => {
-  debugger;
 
   console.log('--- form data changed ---');
 
@@ -17,12 +16,15 @@ whenFormDataChanges('input', () => {
 
   let mirrored = ' | ';
   for (let char of userText) {
-    mirrored = char + mirrored + char;
+    mirrored = char + mirrored.toLocaleUpperCase() + char;
+
   }
 
   // --- display the result ---
 
   displayString('output', mirrored);
+
+
 });
 
 /*  ===== Challenges =====
