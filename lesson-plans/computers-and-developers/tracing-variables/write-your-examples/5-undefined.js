@@ -7,8 +7,10 @@ TODO: create a few variables(undefined):
 declared, initialized, read , reassigned,...
 */
 
+// declared x with no value
 let x;
 
+// declared z with no value
 let z;
-
+// read x and z
 console.log(x , z)

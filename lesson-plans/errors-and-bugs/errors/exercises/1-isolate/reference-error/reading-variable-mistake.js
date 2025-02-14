@@ -2,23 +2,25 @@
 
 console.log('--- in execution phase ---');
 
-/*
-  environment:
+  const object1 = {
 
-  name:
-  message:
+  name: "Ana",
+  message: "Like fruit",
 
-  location:
+  location: "Antwerp",
 
-  life cycle:
+  lifeCle: "100 years",
 
-  the mistake:
+  theMistake: "Not save money",
 
-  the fix(es):
-*/
+  theFixes: " save money"
+  }
+
 
 
 
 let tomatoes = 'fresh';
+
+console.log(Object.keys(object1));
 
 console.log(tomatoes);

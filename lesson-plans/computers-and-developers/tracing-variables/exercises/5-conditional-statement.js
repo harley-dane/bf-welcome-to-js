@@ -1,10 +1,11 @@
 'use strict';
 
-let a = 'Ewin';
-// let a = 'Tugba';
+//let a = 'Ewin';
+//let a = 'Tugba';
 // let a = 'Jo';
 // let a = 'Olesandra';
 
+let a = prompt("put your name")
 let b = 'Hello ' + a + ', your name is ';
 
 if (a.length > 4) {

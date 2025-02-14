@@ -36,7 +36,7 @@ whenFormDataChanges('user-data', () => {
   // --- display the repeated text ---
 
 
- displayString(displayString, readString, repeated  )
+ displayString( "doubled-input", repeated  )
 });
 
 
