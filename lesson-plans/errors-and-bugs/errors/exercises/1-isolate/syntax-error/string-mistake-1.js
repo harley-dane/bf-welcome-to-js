@@ -6,20 +6,20 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment: chrome
 
-  name:
-  message:
+  name: Uncaught ReferenceError
+  message: a is not defined
 
-  location:
+  location: 23
 
-  life cycle:
+  life cycle: 
 
-  the mistake:
+  the mistake: a was not  declared
 
-  the fix(es):
+  the fix(es): a was declared
 */
 
-const a = 'this is two lines';
+ const a = 'this is two lines';
 
 

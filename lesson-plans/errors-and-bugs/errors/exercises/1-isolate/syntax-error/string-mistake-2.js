@@ -6,21 +6,21 @@ console.log('--- in execution phase ---');
 
 
 /*
-  environment:
+  environment:chrome
 
-  name:
-  message:
+  name:Uncaught ReferenceError
+  message:quotesInQuotes is not defined
 
-  location:
+  location: 25
 
-  life cycle:
+  life cycle:  execution phase
 
-  the mistake:
+  the mistake: quotesInQuotes was miss spelled 
 
-  the fix(es):
+  the fix(es): correct the quotesInQuotes spelling
 */
 
-const quotesInQuotes = 'remind yourself  ' + 'i can do this!  ' +' at least once a day';
+const quotesInQuotes = 'remind yourself  ' + 'I can do this!  ' +' at least once a day';
 
 console.log(quotesInQuotes)
 
