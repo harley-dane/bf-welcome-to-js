@@ -3,18 +3,18 @@
 console.log('--- in execution phase ---');
 
 /*
-  environment:
+  environment:chrome
 
-  name:
-  message:
+  name:chrome
+  message:Cannot access 'isValidUserName' before initialization
 
-  location:
+  location: 22
 
   life cycle:
 
-  the mistake:
+  the mistake: 'isValidUserName' before initialization
 
-  the fix(es):
+  the fix(es):'isValidUserName' after initialization
 */
 
 const userName = 'chiobin';
