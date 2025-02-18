@@ -6,7 +6,7 @@ import {
 } from '../../../../../../lib/dom-io/index.js';
 
 whenFormDataChanges('reversify', () => {
-  debugger;
+
 
   console.log('--- form data changed ---');
 
@@ -29,10 +29,12 @@ whenFormDataChanges('reversify', () => {
   // --- set to upper or lower case ---
 
   let finalText = '';
-  if (screaming) {
+  if (text.length > 10) {
     finalText = reversed.toUpperCase();
-  } else {
+  } else if (text.length > 5)  {
     finalText = reversed.toLowerCase();
+  }else {
+    finalText = reversed
   }
 
   console.log(finalText);

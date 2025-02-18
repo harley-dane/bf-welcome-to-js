@@ -11,3 +11,6 @@ while (b.length < a.length * 3) {
 }
 
 console.log(b);
+
+
+

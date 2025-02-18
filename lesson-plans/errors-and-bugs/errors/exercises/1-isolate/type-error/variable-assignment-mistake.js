@@ -22,6 +22,6 @@ console.log('--- in execution phase ---');
 
 let isHappy = false;
 
-true = isHappy;
 
+ let isHappy1 = true
 

@@ -1,6 +1,6 @@
 'use strict';
 
-let input = null;
+/*let input = null;
 while (input === null || input.length !== 5) {
   input = prompt('enter something with 5 characters:');
 }
@@ -13,3 +13,14 @@ alert(message);
   - Change the condition to 10 characters.
   - Make the user write "everything" in 2 steps.
 */
+
+
+let input = null;
+while(input === null || input.length !== 10){
+  input = prompt("enter somthing with 10 character")
+
+}
+
+let message = "thank you" + input + " !"
+
+alert(message);
