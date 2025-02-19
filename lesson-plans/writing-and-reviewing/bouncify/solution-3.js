@@ -23,3 +23,44 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+const bouncifyText = () => {
+      let text = ""
+
+      while (text === null || text === "") {
+        text = prompt("Enter some text to bouncify:");
+
+        if(text === null){
+          alert("there is no escape")
+        }
+        if(text === ""){
+          alert("no empty input, try again.")
+        }
+      }
+
+      let result = '';
+      let makeUpperCase = true;
+      let i = 0;
+
+      while (i < text.length) {
+        const char = text[i];
+
+        if (char.match(/[a-z]/i)) { // Check if the character is a letter
+          if (makeUpperCase) {
+            result += char.toUpperCase();
+          } else {
+            result += char.toLowerCase();
+          }
+          makeUpperCase = !makeUpperCase; // Alternate between uppercase and lowercase
+        } else {
+          result += char; // Add non-letter characters as they are
+        }
+
+        i++;
+      }
+
+      alert("Bouncified Text: " + result);
+    }
+
+    // Call the function to bouncify text
+    bouncifyText();
