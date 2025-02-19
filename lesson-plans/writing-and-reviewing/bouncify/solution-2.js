@@ -23,3 +23,21 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+
+let input = ''
+
+while(input === null || input === ''){
+prompt("enter something to boncify")
+
+if(input === null){
+alert("u cant escape")
+
+}
+if(input === ""){
+alert("no way out bro!")
+}
+continue
+}
+
+alert("thanks")

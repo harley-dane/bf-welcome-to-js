@@ -24,46 +24,43 @@
 
 */
 
+let inputText = ""
 
+while(inputText === null || inputText === ""){
+inputText = prompt("enter some text, the letters will be bouncified")
 
+if(inputText === null){
+  alert("there is no escape!")
+}
+if(inputText === ""){
+  alert("no empty input, try again.")
+}
+}
 
-const bouncifyText = () => {
-      let text = ""
+const  bouncifyText = (text) => {
 
-      while (text === null || text === "") {
-        text = prompt("Enter some text to bouncify:");
+let result = '';
+let makeUpperCase = true;
 
-        if(text === null){
-          alert("no empty input, try again.")
-        }
-        if(text === ""){
-          alert("there is no escape!")
-        }
-      }
-
-      let result = '';
-      let makeUpperCase = true;
-      let i = 0;
-
-      while (i < text.length) {
-        const char = text[i];
-
-        if (char.match(/[a-z]/i)) { // Check if the character is a letter
-          if (makeUpperCase) {
-            result += char.toUpperCase();
-          } else {
-            result += char.toLowerCase();
-          }
-          makeUpperCase = !makeUpperCase; // Alternate between uppercase and lowercase
-        } else {
-          result += char; // Add non-letter characters as they are
-        }
-
-        i++;
-      }
-
-      alert("Bouncified Text: " + result);
+for (let char of text) {
+  if (char.match(/[a-z]/i)) { // Check if the character is a letter
+    if (makeUpperCase) {
+      result += char.toUpperCase();
+    } else {
+      result += char.toLowerCase();
     }
+    makeUpperCase = !makeUpperCase; // Alternate between uppercase and lowercase
+  } else {
+    result += char; // Add non-letter characters as they are
+  }
+}
 
-    // Call the function to bouncify text
-    bouncifyText();
+  return result;
+}
+
+// Example usage:
+const bouncifiedText = bouncifyText(inputText);
+
+alert(bouncifiedText); 
+
+
